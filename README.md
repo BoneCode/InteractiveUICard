@@ -8,5 +8,5 @@ GSAP is a JavaScript library for building high-performance animations that work 
 # How I learned to implement this project:
 [Youtube]
 
-  [Click Here]: <http://127.0.0.1:5500/index2.html/>
+  [Click Here]: <http://127.0.0.1:5500/index2.html#/>
   [Youtube]: <https://www.youtube.com/watch?v=a821gLAdLAU&list=PL0lNJEnwfVVNU3Jf-B4VHtAA71XvDiqre/>
