@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+ 
+
+<div class = "image"></div>
+<div class="card" id="card">
+    <h1>The Life of Pablo</h1>
+    <p>The Life of Pablo is the seventh studio album by American rapper and producer Kanye West. It was released on February 14, 2016, through GOOD Music and distributed by Def Jam Recordings. Recording sessions took place from 2013 to 2016, in Italy, Mexico, Canada, and the United States. Production was handled by West and a variety of other producers, including co-executive producers Rick Rubin and Noah Goldstein. Featured vocalist include: Chance the Rapper, Rihanna, The Weeknd, Ty Dolla Sign, Post Malone, Future, Chris Brown & Young Thug.</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js" integrity="sha512-9F1xsW3TBG87UnyGcF1SrXph249h/eUKPRKJZVhXxW+OeDmCiBvU9/gLfOo5qEvGTjTxOr6YQrY4ImjL90IUyw==" crossorigin="anonymous"></script>
+
+<script>
+    var card = document.getElementById('card');
+
+    var rule = CSSRulePlugin.getRule(".card::before");
+    var rule2 = CSSRulePlugin.getRule(".card::after");
+
+    var tl = gsap.timeline({defaults: {ease: "power2.inOut"}});
+
+    //beginning of transition
+    tl.to(rule, {
+        width: '100%'
+    })
+    //coloring transition
+    tl.to(rule2,{
+        width: '100%'
+    }, '-=.3')
+    //changing text color
+    tl.to('h1', {
+        color: 'white'
+    }, "-=.7")
+    //changing paragraph color
+    tl.to('p', {
+        'clipPath': 'circle(140% at 0% 100%)',
+        'transform': 'translateX(0)',
+    },"-=.3")
+    tl.pause();
+
+    card.addEventListener('mouseenter', () => {
+        tl.play();
+    })
+    card.addEventListener('mouseleave', () => {
+        tl.reverse();
+    })
+
+</script>
+
+</body>
+</html>
