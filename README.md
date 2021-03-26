@@ -8,5 +8,9 @@ GSAP is a JavaScript library for building high-performance animations that work 
 # How I learned to implement this project:
 [Youtube]
 
+# Please follow me and leave a like on CodePen
+[My CodePen account]
+
   [Youtube]: <https://www.youtube.com/watch?v=a821gLAdLAU&list=PL0lNJEnwfVVNU3Jf-B4VHtAA71XvDiqre/>
   [Interactive UI Card]: <https://codepen.io/bonecode/pen/oNBxBLK/>
+  [My CodePen account]: <https://codepen.io/bonecode/pens/>
